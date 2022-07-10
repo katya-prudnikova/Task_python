@@ -8,10 +8,10 @@ day = int(input('Введите день недели: '))
 
 def week(N):
     if N == 6 or N == 7:
-        print('Выходной')
+        print('Да')
     elif (N > 7 or N < 1):
         print('Введите число от 1 до 7')   
     else:
-        print('Будний')  
-        
+        print('Нет')  
+
 week(day)    

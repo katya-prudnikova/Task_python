@@ -4,14 +4,14 @@
 # - 7 -> да
 # - 1 -> нет
 
-day = int(input('Введите день недели: '))
+day = int(input('Введите цифру, обозначающую день недели: '))
 
-def week(N):
+def number_week(N):
     if N == 6 or N == 7:
         print('Да')
     elif (N > 7 or N < 1):
-        print('Введите число от 1 до 7')   
+        print('Это вообще не день недели')   
     else:
         print('Нет')  
 
-week(day)    
+number_week(day)    

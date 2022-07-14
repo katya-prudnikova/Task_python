@@ -2,3 +2,21 @@
 '''Пример:
 - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)'''
 
+list = []
+N = input('Введите значение N: ')
+
+def composition_number(a):
+    number = 1
+    if a > 0:
+        for i in range(1, a + 1):
+            number *= i 
+            list.append(number)
+        print(list)
+    else:
+        print('1')
+
+try:
+    N = int(N)
+    composition_number(N)
+except:
+    print('Введите целое число')

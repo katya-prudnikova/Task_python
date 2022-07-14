@@ -2,3 +2,15 @@
 '''Пример:
 - 6782 -> 23
 - 0,56 -> 11'''
+
+
+number = input('Введите вещественное число: ')
+
+def summa_number(N):
+    sum = 0
+    for i in N:
+        if i != '.':
+            sum += int(i)
+    print(sum)
+
+summa_number(number)
